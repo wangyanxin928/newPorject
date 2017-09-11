@@ -1,0 +1,163 @@
+<!--<div class="row">-->
+    <!--<div class="col-md-12">-->
+        <!--文本框+lable  start-->
+        <div class="portlet light  ">
+            <div class="portlet-title">
+                <div class="caption">
+                    <span class="caption-subject bold font-grey-gallery uppercase"> 文本框+lable </span>
+                </div>
+                <div class="tools">
+                    <span class="caption-helper"><a>   </a></span>
+                    <a href="" class="collapse" data-original-title=" 收起/展开" title="收起/展开"> </a>
+                </div>
+            </div>
+            <div class="portlet-body form">
+                <!-- BEGIN FORM-->
+                <form class="form-horizontal">
+                    <div class="form-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label col-md-3">普通输入框</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control  input-circle" placeholder="普通输入框" >		
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label col-md-3">不可用输入框</label>
+                                    <div class="col-md-9">
+                                        <input type="text" disabled class="form-control  input-circle" placeholder="不可用输入框" >
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label col-md-3">只读输入框</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control  input-circle" readonly placeholder="只读输入框" >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                            </div>
+                        </div>
+
+                        <!--<div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label col-md-3">学校代码</label>
+                                    <div class="col-md-9">
+                                        <p class="form-control-static">
+                                            1000258
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                            </div>
+                        </div>-->
+                    </div>
+                </form>
+                <!-- END FORM-->
+            </div>
+		</div>
+		<!--文本框+lable end-->
+		<!--不同大小的输入框  start-->
+        <div class="portlet light  " >
+            <div class="portlet-title">
+                <div class="caption">
+                    <span class="caption-subject bold font-grey-gallery uppercase"> 不同大小的输入框 </span>
+                </div>
+                <div class="tools">
+                    <span class="caption-helper"><a>   </a></span>
+                    <a href="" class="collapse" data-original-title=" 收起/展开" title="收起/展开"> </a>
+                </div>
+            </div>
+            <div class="portlet-body form">
+                <!-- BEGIN FORM-->
+                <form >
+                    <div class="form-body">
+                    	<div class="form-group">
+                    		<input type="text" class="form-control input-circle input-xsmall " placeholder=".input-xsmall">
+                    		<input type="text" class="form-control input-circle input-small margin-top-14" placeholder=".input-small">
+                    		<input type="text" class="form-control input-circle input-medium margin-top-14" placeholder=".input-medium">
+                    		<input type="text" class="form-control input-circle input-large margin-top-14" placeholder=".input-large">
+                    		<input type="text" class="form-control input-circle input-xlarge margin-top-14" placeholder=".input-xlarge">
+                    		<input type="text" class="form-control input-circle margin-top-14" placeholder="fluid">
+                    	</div>
+                    </div>
+                </form>
+                <!-- END FORM-->
+            </div>
+		</div>
+		<!--不同大小的输入框 end-->
+		<!--不同高度的输入框  start-->
+        <div class="portlet light  " >
+            <div class="portlet-title">
+                <div class="caption">
+                    <span class="caption-subject bold font-grey-gallery uppercase"> 不同高度的输入框 </span>
+                </div>
+                <div class="tools">
+                    <span class="caption-helper"><a>   </a></span>
+                    <a href="" class="collapse" data-original-title=" 收起/展开" title="收起/展开"> </a>
+                </div>
+            </div>
+            <div class="portlet-body form">
+                <!-- BEGIN FORM-->
+                <form >
+                    <div class="form-body">
+                    	<div class="form-group">
+                    		<input type="text" class="form-control input-circle input-sm" placeholder="input-sm">
+                    		<input type="text" class="form-control input-circle margin-top-14" placeholder="">
+                    		<input type="text" class="form-control input-circle input-lg margin-top-14" placeholder="input-lg">
+                    	</div>
+                    </div>
+                </form>
+                <!-- END FORM-->
+            </div>
+		</div>
+		<!--不同高度的输入框 end-->
+        <!--不同的textarea star-->
+        <div class="portlet light  " >
+            <div class="portlet-title">
+                <div class="caption">
+                    <span class="caption-subject bold font-grey-gallery uppercase"> 多行输入框Textarea </span>
+                </div>
+                <div class="tools">
+                    <span class="caption-helper"><a>   </a></span>
+                    <a href="" class="collapse" data-original-title=" 收起/展开" title="收起/展开"> </a>
+                </div>
+            </div>
+            <div class="portlet-body form">
+                <!-- BEGIN FORM-->
+                <form >
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label col-md-3">多行输入框</label>
+                                <div class="col-md-9">
+                                    <textarea name=""  cols="30" rows="10"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6"></div>
+                    </div>
+                </form>
+                <!-- END FORM-->
+            </div>
+        </div>
+        <!--不同的textarea end-->
+
+    <!--</div>-->
+<!--</div>-->

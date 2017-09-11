@@ -1,0 +1,65 @@
+<style>
+    .sidebar-tags li a {
+        cursor: default;
+    }
+    .sidebar-tags li a>i {
+        cursor: pointer;
+    }
+    .nav.nav-pills>li>a{
+        cursor: default;
+        background: #f7f7f7;
+        margin: 0 2px 5px 0;
+    }
+    .nav.nav-pills>li>a>i{
+        cursor: pointer;
+    }
+</style>
+<div class="portlet light  ">
+    <div class="portlet-title">
+        <div class="caption">
+            <span class="caption-subject bold font-grey-gallery uppercase"> 文件上传 </span>
+        </div>
+        <div class="tools">
+            <span class="caption-helper"><a>   </a></span>
+            <a href="" class="collapse" data-original-title=" 收起/展开" title="收起/展开"> </a>
+        </div>
+    </div>
+    <div class="portlet-body form">
+        <!-- BEGIN FORM-->
+        <form class="form-horizontal">
+            <div class="form-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label col-md-3">上传文件</label>
+                            <div class="col-md-9">
+                                <button type="button" class="btn btn-info"  onclick='javascript:$(this).next("input[type=file]").click();'>选择文件</button>
+                                <input type="file" style="display:none;" id="fileUpload">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                    </div>
+                </div>
+                <div class="row" id="fileListWrapper" style="display:none;">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label col-md-3">已选择</label>
+                            <div class="col-md-9">
+                                <ul class="nav nav-pills">
+                                    <!--<li >-->
+                                        <!--<a >-->
+                                            <!--当前项目删除操作的...<i class="fa fa-times"></i></a>-->
+                                    <!--</li>-->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                    </div>
+                </div>
+            </div>
+        </form>
+        <!-- END FORM-->
+    </div>
+</div>

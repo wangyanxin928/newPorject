@@ -1,0 +1,361 @@
+<!--author:w王燕欣-->
+<!--createDate: 2017/07/27-->
+<!--description: 概览 -->
+
+<!--overviewOne-->
+
+<!-- BEGIN ROW -->
+<style>
+
+</style>
+<!--头部信息内容 分四块 start-->
+<div class="row headerRow " >
+    <div class="col-md-12 col-xs-12">
+        <div class="col-md-4 col-xs-4  pl20">
+            <div class="usr-info ">
+                <p id="project_name" name="project_name">高200px</p>
+                <span id="project_state" name="project_state">未知</span>
+                <div class="breakLine"></div>
+                <div>
+                    <p class="f14 mt10">项目周期：</p>
+                    <div class="f12" id="project_time" name="project_time">2017-07-13 至 2017-08-31</div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-8 col-xs-8 ">
+            <div class="row">
+                <div class="col-md-4 col-xs-4 ">
+                    <div class=" leftBoxLine ">
+                        <div class="titleTwo">
+                            <p>评估进度</p>
+                            <a href="#scheduleProject" class="appInfoCode"></a>
+                        </div>
+                        <div class="section ">
+                            方图的显示区域，宽自适应，高120；
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-4 ">
+                    <div class=" leftBoxLine">
+                        <div class="titleTwo">
+                            <p>评估进度</p>
+                            <a href="#scheduleProject" class="appInfoCode"></a>
+                        </div>
+                        <div class="section ">
+                            方图的显示区域，宽自适应，高120；
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-4  ">
+                    <div class=" leftBoxLine">
+                        <div class="titleTwo">
+                            <p>评估进度</p>
+                            <a href="#scheduleProject" class="appInfoCode"></a>
+                        </div>
+                        <div class="section ">
+                            方图的显示区域，宽自适应，高120；
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row headerRow2 mt20 ">
+    <div class="col-md-12 col-xs-12">
+        <div class="col-md-4 col-xs-4   pl20">
+            <div class="usr-info ">
+                <p  name="project_name">高250px</p>
+                <span name="project_state">未知</span>
+                <div class="breakLine"></div>
+                <div>
+                    <p class="f14 mt10">项目周期：</p>
+                    <div class="f12"  name="project_time">2017-07-13 至 2017-08-31</div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-8 col-xs-8 ">
+            <div class="row">
+                <div class="col-md-4 col-xs-4   ">
+                    <div class=" leftBoxLine ">
+                        <div class="titleTwo">
+                            <p>评估进度</p>
+                            <a href="#scheduleProject" class="appInfoCode"></a>
+                        </div>
+                        <div class="section ">
+                            方图的显示区域，宽自适应，高170；
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-4   ">
+                    <div class=" leftBoxLine">
+                        <div class="titleTwo">
+                            <p>评估进度</p>
+                            <a href="#scheduleProject" class="appInfoCode"></a>
+                        </div>
+                        <div class="section ">
+                            方图的显示区域，宽自适应，高170；
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-4   ">
+                    <div class=" leftBoxLine">
+                        <div class="titleTwo">
+                            <p>评估进度</p>
+                            <a href="#scheduleProject" class="appInfoCode"></a>
+                        </div>
+                        <div class="section ">
+                            方图的显示区域，宽自适应，高170；
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row headerRow3 mt20 ">
+    <div class="col-md-12 col-xs-12">
+        <div class="col-md-4 col-xs-4   pl20">
+            <div class="usr-info ">
+                <p  name="project_name">高300px</p>
+                <span name="project_state">未知</span>
+                <div class="breakLine"></div>
+                <div>
+                    <p class="f14 mt10">项目周期：</p>
+                    <div class="f12"  name="project_time">2017-07-13 至 2017-08-31</div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-8 col-xs-8 ">
+            <div class="row">
+                <div class="col-md-4 col-xs-4   ">
+                    <div class=" leftBoxLine ">
+                        <div class="titleTwo">
+                            <p>评估进度</p>
+                            <a href="#scheduleProject" class="appInfoCode"></a>
+                        </div>
+                        <div class="section ">
+                            显示区域，宽自适应，高220；
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-4   ">
+                    <div class=" leftBoxLine">
+                        <div class="titleTwo">
+                            <p>评估进度</p>
+                            <a href="#scheduleProject" class="appInfoCode"></a>
+                        </div>
+                        <div class="section ">
+                            显示区域，宽自适应，高220；
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-4   ">
+                    <div class=" leftBoxLine">
+                        <div class="titleTwo">
+                            <p>评估进度</p>
+                            <a href="#scheduleProject" class="appInfoCode"></a>
+                        </div>
+                        <div class="section ">
+                            显示区域，宽自适应，高220；
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--头部信息内容 分四块 end-->
+
+
+<!--左侧三分之一，右侧三分之二 start-->
+<div class="row centerRow mt20 ">
+    <div class="col-md-12 col-xs-12 ">
+        <div class="col-md-8 col-xs-8 pl0 pr10  sectionBox">
+            <div class="section ">
+                显示区域，宽自适应，高200；
+            </div>
+        </div>
+        <div class="col-md-4 col-xs-4 sectionBox p0 pl10">
+            <div class="section">
+                显示区域，宽自适应，高200；
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row centerRow2 mt20 ">
+    <div class="col-md-12 col-xs-12 ">
+        <div class="col-md-8 col-xs-8 pl0 pr10  sectionBox">
+            <div class="section ">
+                显示区域，宽自适应，高300；
+            </div>
+        </div>
+        <div class="col-md-4 col-xs-4 sectionBox  p0 pl10">
+            <div class="section">
+                显示区域，宽自适应，高300；
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row centerRow4 mt20 ">
+    <div class="col-md-12 col-xs-12 ">
+        <div class="col-md-8 col-xs-8 pl0 pr10  sectionBox">
+            <div class="section ">
+                显示区域，宽自适应，高400；
+            </div>
+        </div>
+        <div class="col-md-4 col-xs-4 sectionBox  p0 pl10">
+            <div class="section">
+                显示区域，宽自适应，高400；
+            </div>
+        </div>
+    </div>
+</div>
+<!--左侧三分之一，右侧三分之二 end-->
+
+<!--左侧三分之二，右侧三分之一 start-->
+<div class="row centerRow5 mt20 ">
+    <div class="col-md-12 col-xs-12 ">
+        <div class="col-md-4 col-xs-4 pl0 pr10  sectionBox">
+            <div class="section ">
+                显示区域，宽自适应，高200；
+            </div>
+        </div>
+        <div class="col-md-8 col-xs-8 sectionBox p0 pl10">
+            <div class="section">
+                显示区域，宽自适应，高200；
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row centerRow6 mt20 ">
+    <div class="col-md-12 col-xs-12 ">
+        <div class="col-md-4 col-xs-4 pl0 pr10  sectionBox">
+            <div class="section ">
+                显示区域，宽自适应，高300；
+            </div>
+        </div>
+        <div class="col-md-8 col-xs-8 sectionBox  p0 pl10">
+            <div class="section">
+                显示区域，宽自适应，高300；
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row centerRow7  mt20">
+    <div class="col-md-12 col-xs-12 ">
+        <div class="col-md-4 col-xs-4 pl0 pr10  sectionBox">
+            <div class="section ">
+                显示区域，宽自适应，高400；
+            </div>
+        </div>
+        <div class="col-md-8 col-xs-8 sectionBox  p0 pl10">
+            <div class="section">
+                显示区域，宽自适应，高400；
+            </div>
+        </div>
+    </div>
+</div>
+<!--左侧三分之二，右侧三分之一 end-->
+
+<!-- 平均分两块start -->
+<div class="row centerRowAverage mt20 ">
+    <div class="col-md-12 col-xs-12 ">
+        <div class="col-md-6 col-xs-6 pl0 pr10  sectionBox">
+            <div class="section ">
+                显示区域，宽自适应，高200；
+            </div>
+        </div>
+        <div class="col-md-6 col-xs-6 sectionBox p0 pl10 ">
+            <div class="section">
+                显示区域，宽自适应，高200；
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row centerRowAverage1 mt20 ">
+    <div class="col-md-12 col-xs-12 ">
+        <div class="col-md-6 col-xs-6 pl0 pr10  sectionBox">
+            <div class="section ">
+                显示区域，宽自适应，高300；
+            </div>
+        </div>
+        <div class="col-md-6 col-xs-6 sectionBox p0 pl10 ">
+            <div class="section">
+                显示区域，宽自适应，高300；
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row centerRowAverage2 mt20 ">
+    <div class="col-md-12 col-xs-12 ">
+        <div class="col-md-6 col-xs-6 pl0 pr10  sectionBox">
+            <div class="section ">
+                显示区域，宽自适应，高400；
+            </div>
+        </div>
+        <div class="col-md-6 col-xs-6 sectionBox p0 pl10 ">
+            <div class="section">
+                显示区域，宽自适应，高400；
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row centerRowAverage3 mt20 ">
+    <div class="col-md-12 col-xs-12 ">
+        <div class="col-md-6 col-xs-6 pl0 pr10  sectionBox">
+            <div class="section ">
+                显示区域，宽自适应，高500；
+            </div>
+        </div>
+        <div class="col-md-6 col-xs-6 sectionBox p0 pl10 ">
+            <div class="section">
+                显示区域，宽自适应，高500；
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 平均分两块end -->
+
+<!--平均分成三份 start-->
+<div class="row threeRowAverage mt20 ">
+    <div class="col-md-12 col-xs-12 ">
+        <div class="col-md-4 col-xs-4 p0 pr15 sectionBox">
+            <div class="section ">
+                需要找到common.css/的threeRowAverage，根据两行设置高度／不可
+                显示区域，宽自适应，高200；
+                平均分成三份
+            </div>
+        </div>
+        <div class="col-md-4 col-xs-4 p0 pl7_5 pr7_5 sectionBox ">
+            <div class="section">
+                显示区域，宽自适应，高200；
+                平均分成三份
+            </div>
+        </div>
+        <div class="col-md-4 col-xs-4 p0 pl15 sectionBox  ">
+            <div class="section">
+                显示区域，宽自适应，高200；
+                平均分成三份
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--平均分成三份 edn-->
+
+
+<!-- END ROW -->
+

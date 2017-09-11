@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="../js/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+		<link href="../css/components.css" id="style_components" rel="stylesheet" type="text/css"/>
+		<link href="../js/plugins/layout/css/custom.css" rel="stylesheet" type="text/css"/>
+		<!--自定义样式-->
+    	<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+	</head>
+	<body>		
+		<!-- BEGIN ROW -->
+		<div class="row">
+		    <div class="col-md-12">
+		        <!--文本框+lable  start-->
+		        <div class="portlet light  " id="htmlTextLable">
+		            <div class="portlet-title">
+		                <div class="caption">
+		                    <span class="caption-subject bold font-grey-gallery uppercase"> 文本框+lable </span>
+		                    &nbsp;&nbsp;&nbsp;&nbsp;
+		                    <span><i class="icon-question font-grey-gallery"></i></span>
+		                    <span class="caption-helper" data-target="#text_lable" data-toggle="modal"><a > 关于文本框+lable的组件样式</a></span>
+		                </div>
+		                <div class="tools">
+		                    <span class="caption-helper"><a>   </a></span>
+		                    <a href="" class="collapse" data-original-title=" 收起/展开" title="收起/展开"> </a>
+		                </div>
+		            </div>
+		            <div class="portlet-body form">
+		                <!-- BEGIN FORM-->
+		                <form action="#" class="form-horizontal" id="schoolBaseForm">
+		                    <div class="form-body">
+		                        <div class="row">
+		                            <div class="col-md-6">
+		                                <div class="form-group">
+		                                    <label class="control-label col-md-3">学校名称</label>
+		                                    <div class="col-md-9">
+		                                        <input type="text" class="form-control  input-circle" placeholder="如:绵阳外国语学校" id="schoolName" name="schoolName">		
+		                                    </div>
+		                                </div>
+		                            </div>
+		                            <div class="col-md-3">
+		                            </div>
+		                            <div class="col-md-2">
+		                                <div class="form-group">
+		                                    <div class="row">
+		                                        <div class="col-md-offset-3 col-md-9">
+		                                            <button type="button" class="btn btn-circle blue btn-block btn-sm" style="border-radius:5px !important;">更新</button>
+		                                        </div>
+		                                    </div>
+		                                </div>
+		                            </div>
+		                            <div class="col-md-1">
+		                            </div>
+		                        </div>
+		                        <div class="row">
+		                            <div class="col-md-6">
+		                                <div class="form-group">
+		                                    <label class="control-label col-md-3">学校英文名称</label>
+		                                    <div class="col-md-9">
+		                                        <input type="text" class="form-control  input-circle" placeholder="如:MIANYANG MIDDLE SCHOOL" id="schoolEnName">
+		
+		                                    </div>
+		                                </div>
+		                            </div>
+		                            <div class="col-md-3">
+		                            </div>
+		                            <div class="col-md-2">
+		                                <div class="form-group">
+		                                    <div class="row">
+		                                        <div class="col-md-offset-3 col-md-9">
+		                                            <button type="BUTTON" class="btn btn-circle default  btn-block btn-sm" style="border-radius:5px !important;"
+		                                                    data-target="#confirm" data-toggle="modal">取消</button>
+		                                        </div>
+		                                    </div>
+		                                </div>
+		                            </div>
+		                            <div class="col-md-1">
+		                            </div>
+		                        </div>
+		                        <div class="row">
+		                            <div class="col-md-6">
+		                                <div class="form-group">
+		                                    <label class="control-label col-md-3">学校地址</label>
+		                                    <div class="col-md-9">
+		                                        <input type="text" class="form-control  input-circle" readonly placeholder="如:绵阳市酒仙桥路20号" id="schoolAddress" value="绵阳市酒仙桥路20号">
+		
+		                                    </div>
+		                                </div>
+		                            </div>
+		                            <div class="col-md-3">
+		                            </div>
+		                            <div class="col-md-2">
+		                            </div>
+		                            <div class="col-md-1">
+		                            </div>
+		                        </div>
+		                        <div class="row">
+		                            <div class="col-md-6">
+		                                <div class="form-group">
+		                                    <label class="control-label col-md-3">学校代码</label>
+		                                    <div class="col-md-9">
+		                                        <p class="form-control-static">
+		                                            1000258
+		                                        </p>
+		                                    </div>
+		                                </div>
+		                            </div>
+		                            <div class="col-md-3">
+		                            </div>
+		                            <div class="col-md-2">
+		                            </div>
+		                            <div class="col-md-1">
+		                            </div>
+		                        </div>
+		                    </div>
+		                </form>
+		                <!-- END FORM-->
+		            </div>
+        		</div>
+        		<!--文本框+lable end-->
+		    </div>
+		</div>
+	</body>
+</html>

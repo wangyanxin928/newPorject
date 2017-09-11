@@ -1,0 +1,148 @@
+<div class="portlet light bordered  " action="muliSchool">
+    <div class="portlet-title">
+        <div class="caption">
+            <!--<i class="icon-puzzle font-grey-gallery"></i>-->
+            <span class="caption-subject bold font-grey-gallery uppercase" action="muliSchoolTitle"> 校区名称 </span>
+            <!--<span><i class="icon-question font-grey-gallery"></i></span>-->
+            <!--<span class="caption-helper"><a > 关于学校基本信息</a></span>-->
+        </div>
+        <div class="tools">
+            <span class="caption-helper"><a>  </a></span>
+            <a href="" class="collapse" data-original-title=" 收起/展开" title="收起/展开"> </a>
+        </div>
+    </div>
+
+    <div class="portlet-body form">
+
+        <!-- BEGIN FORM-->
+        <form action="#" class="form-horizontal" id="muliSchoolForm">
+            <div class="form-body">
+                <!--<h3 class="form-section">基础信息</h3>-->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group" action="muliSchoolForm">
+                            <label class="control-label col-md-3">校区名称</label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control  input-circle" placeholder="如:绵阳外国语学校东校区（必填项）"
+                                       action="XQMC" name="XQMC">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label col-md-3">校区号</label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control  input-circle" placeholder="如:10025874（必填项）"
+                                       action="XQH" name="XQH">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label col-md-3">校区地址</label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control  input-circle" placeholder="如:绵阳市酒仙桥路20号（必填项）"
+                                       action="XQDZ" name="XQDZ" value="">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label col-md-3">校区邮编</label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control  input-circle" placeholder="如:1000258（必填项）"
+                                       action="XQYZBM" name="XQYZBM" value="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label col-md-3">联系电话 </label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control  input-circle" placeholder="如:18710030307（必填项）"
+                                       action="XQLXDH" name="XQLXDH" value="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label col-md-3">传真电话 </label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control  input-circle" placeholder="如:010-87521236（必填项）"
+                                       action="XQCZDH" name="XQCZDH" value="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label col-md-3">负责人工号 </label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control  input-circle" placeholder="如:125841" action
+                                        ="XQFZRH" name="XQFZRH" value="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <div class="col-md-3"></div>
+                            <div class="col-md-9">
+                                <div class="col-md-4">
+                                    <a class="btn btn-circle blue btn-block btn-sm" action="saveMuliSchool">保存</a>
+                                </div>
+                                <div class="col-md-4">
+                                    <a class="btn btn-circle red btn-block btn-sm" action="removeMuliSchool">删除</a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                    </div>
+                </div>
+                <!--/row-->
+            </div>
+        </form>
+        <!-- END FORM-->
+    </div>
+</div>

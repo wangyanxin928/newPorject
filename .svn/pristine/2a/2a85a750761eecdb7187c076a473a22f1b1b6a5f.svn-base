@@ -1,0 +1,205 @@
+﻿// ================================================================
+//  author:文霞
+//  createDate: 2016/09/05
+//  description: 基础组件 路由定义
+//  ===============================================================
+define(function (require) {
+    "use strict";
+    return Backbone.Router.extend({
+        routes: {
+            "": "baseInput",
+            "baseInput": "baseInput",
+            "baseRadio":"baseRadio",
+            "baseCheckbox":"baseCheckbox",
+            "baseSelect":"baseSelect",
+            "baseDatepicker":"baseDatepicker",
+            "baseDataTable":"baseDataTable",
+            "baseDataTableNew":"baseDataTableNew",
+            "baseFormValidate":"baseFormValidate",
+            "baseUploadImg":"baseUploadImg",
+            "baseUploadFile":"baseUploadFile",
+
+            /*wyx star*/
+            /*wyx-文件上传dome*/
+            //"baseUploadFile":"baseUploadFile",
+            /*wyx-添加模块dome*/
+            "baseAddModule":"baseAddModule",
+            /*wyx-添加模块dome*/
+            "baseLayer":"baseLayer",
+            /*wyx-概览模块dome*/
+            "overviewOne":"overviewOne",
+            /*wyx end*/
+            "putong_content":"putong_content"
+        },
+        baseInput:function(){
+        	require(["pages/baseInput"], function (view) {
+                var _view = new view({
+                    model: {
+                        viewInfo: ""
+                    }
+                });
+                $('.page-content-wrapper').html(_view.$el);
+            })
+        },
+        baseRadio:function(){
+        	require(["pages/baseRadio"], function (view) {
+                var _view = new view({
+                    model: {
+                        viewInfo: ""
+                    }
+                });
+                $('.page-content-wrapper').html(_view.$el);
+                _view.afterRender();
+            })
+        },
+        baseCheckbox:function(){
+        	require(["pages/baseCheckbox"], function (view) {
+                var _view = new view({
+                    model: {
+                        viewInfo: ""
+                    }
+                });
+                $('.page-content-wrapper').html(_view.$el);
+                _view.afterRender();
+            })
+        },
+        baseSelect:function(){
+        	require(["pages/baseSelect"], function (view) {
+                var _view = new view({
+                    model: {
+                        viewInfo: ""
+                    }
+                });
+                $('.page-content-wrapper').html(_view.$el);
+                _view.afterRender();
+            })
+        },
+        baseDatepicker:function(){
+        	require(["pages/baseDatepicker"], function (view) {
+                var _view = new view({
+                    model: {
+                        ruleinfo: ""
+                    }
+                });
+                $('.page-content-wrapper').html(_view.$el);
+                _view.afterRender();
+            })
+        },
+        baseDataTable:function(){
+        	require(["pages/baseDataTable"], function (view) {
+                var _view = new view({
+                    model: {
+                        ruleinfo: ""
+                    }
+                });
+                $('.page-content-wrapper').html(_view.$el);
+                _view.afterRender();
+            })
+        },
+        baseDataTableNew:function(){
+        	require(["pages/baseDataTableNew"], function (view) {
+                var _view = new view({
+                    model: {
+                        ruleinfo: ""
+                    }
+                });
+                $('.page-content-wrapper').html(_view.$el);
+                _view.afterRender();
+            })
+        },
+        baseFormValidate:function(){
+        	require(["pages/baseFormValidate"], function (view) {
+                var _view = new view({
+                    model: {
+                        ruleinfo: ""
+                    }
+                });
+                $('.page-content-wrapper').html(_view.$el);
+                _view.afterRender();
+            })
+        },
+        baseUploadImg:function(){
+        	require(["pages/baseUploadImg"], function (view) {
+                var _view = new view({
+                    model: {
+                        ruleinfo: ""
+                    }
+                });
+                $('.page-content-wrapper').html(_view.$el);
+                _view.afterRender();
+            })
+        },
+        baseUploadFile:function(){
+            require(["pages/baseUploadFile"], function (view) {
+                var _view = new view({
+                    model: {
+                        ruleinfo: ""
+                    }
+                });
+                $('.page-content-wrapper').html(_view.$el);
+                _view.afterRender();
+            })
+        },
+        /*wyx-star*/
+        /*文件上传dome*/
+        //baseUploadFile:function(){
+        //	require(["pages/baseUploadFile"], function (view) {
+        //        var _view = new view({
+        //            model: {
+        //                ruleinfo: ""
+        //            }
+        //        });
+        //        $('.page-content-wrapper').html(_view.$el);
+        //        _view.afterRender();
+        //    })
+        //},
+        /*添加模块*/
+        baseAddModule:function(){
+        	require(["pages/baseAddModule"], function (view) {
+                var _view = new view({
+                    model: {
+                        ruleinfo: ""
+                    }
+                });
+                $('.page-content-wrapper').html(_view.$el);
+                _view.afterRender();
+            })
+        },
+        /*弹出层*/
+        baseLayer:function(){
+        	require(["pages/baseLayer"], function (view) {
+                var _view = new view({
+                    model: {
+                        ruleinfo: ""
+                    }
+                });
+                $('.page-content-wrapper').html(_view.$el);
+                _view.afterRender();
+            })
+        },
+        /*概览模块*/
+        overviewOne:function(){
+        	require(["pages/overviewOne"], function (view) {
+                var _view = new view({
+                    model: {
+                        ruleinfo: ""
+                    }
+                });
+                $('.page-content-wrapper').html(_view.$el);
+                _view.afterRender();
+            })
+        },
+
+        /*wyx-end*/
+        putong_content: function () {
+            require(["pages/putong_content"], function (view) {
+                var _view = new view({
+                    model: {
+                        ruleinfo: ""
+                    }
+                });
+                $('.page-content-wrapper').html(_view.$el);
+            })
+        }
+    })
+})

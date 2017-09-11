@@ -1,0 +1,117 @@
+// ================================================================
+//  author:w王燕欣
+//  createDate: 2017/07/14
+//  description: 基础组件——增加模块
+//  ===============================================================
+define(function (require) {
+    "use strict";
+    var tpl = require('text!tpl/baseAddModule.html'),
+        template = _.template(tpl), _this;
+    var Cropper=   require('cropper');
+    return Backbone.View.extend({
+      	className:"page-content",//如果不添加会document中多一级div
+        initialize: function () {
+            _this = this;
+            this.render();
+        },
+        render: function () {
+            this.$el.html(template(this.model));
+            return this;
+        },
+        afterRender:function(){
+        	
+        },
+        events: {
+            "click #saveTeachBase":"saveData",
+        	"change #uploadImg":"selectImg"
+			,"click #addMuliSchool": "addMuliSchool"
+
+        }
+        ,addMuliSchool: function () {
+            var muliSchoolFormId = "from_" + BasePluginsUTIL.loadRandom();
+            var tplMuliSchoolHTML = require('text!tpl/schoolBase/muliSchool.html');
+            //添加新校区
+            if ($("#muliSchools").children("div.portlet").length == 0) {
+                $("#muliSchools").append(tplMuliSchoolHTML);
+            }
+            else {
+                $($("#muliSchools").children("div.portlet").get(0)).before(tplMuliSchoolHTML);
+            }
+            //验证刚刚添加的校区的验证规则
+            //给刚刚添加的校区FROM的ID赋值
+            $($("#muliSchools").children("div.portlet").get(0)).find("form").attr("id", muliSchoolFormId);
+            // var validatorSchoolXX=_this.validateFormSchoolXQ(muliSchoolFormId);
+            //校区名称文本框输入事件
+            $("#muliSchools [action='XQMC']").keyup(function (e) {
+                $(e.target).parents("[action='muliSchool']").find("[action='muliSchoolTitle']").text($(e.target).val());
+            });
+
+
+            //创建校区删除事件
+            var muliSchoolForm;
+
+            //点击保存按钮保存学校信息
+            $("[action='saveMuliSchool']").on("click", function (e) {
+                var me =this;
+                //执行验证
+                if (!$("#" + muliSchoolFormId).valid()) {
+                    validatorSchoolXX.focusInvalid();
+                    return;
+                }
+                Pace.restart();
+                var url = SchoolUTIL.CONFIG.saveMuliSchoolInfo;
+                //判断，如果有校区ID，表示该校区保存按钮为更新操作，调用更新接口
+                var muliSchoolID = $(e.target).parents("[action='muliSchool']").find(".portlet-title [muliSchoolID]").attr("muliSchoolID");
+                if (muliSchoolID != "" && muliSchoolID != undefined) {
+                    url = SchoolUTIL.CONFIG.updateMuliSchoolInfo;
+                }
+                var paramInfo = {
+                    LSZXSYYID: SchoolUTIL.SchoolInfo.ID,
+                    ID: muliSchoolID,
+                    XQMC: $(e.target).parents("[action='muliSchool']").find("[action='XQMC']").val(),
+                    XQH: $(e.target).parents("[action='muliSchool']").find("[action='XQH']").val(),
+                    XQDZ: $(e.target).parents("[action='muliSchool']").find("[action='XQDZ']").val(),
+                    XQYZBM: $(e.target).parents("[action='muliSchool']").find("[action='XQYZBM']").val(),
+                    XQLXDH: $(e.target).parents("[action='muliSchool']").find("[action='XQLXDH']").val(),
+                    XQCZDH: $(e.target).parents("[action='muliSchool']").find("[action='XQCZDH']").val(),
+                    XQFZRH: $(e.target).parents("[action='muliSchool']").find("[action='XQFZRH']").val(),
+                    CJSJ: SchoolUTIL.getNowFormatDate()
+                };
+                require(['btcommon/ajax'], function (_ajax) {
+                    _ajax.ajaxUpdate(url, JSON.stringify(paramInfo), function (_d) {
+                        var data = _d;
+                        SchoolUTIL.toastrAlert('success', '提示', '信息保存成功！');
+                    })
+                });
+            })
+
+            //点击删除按钮事件
+            $("[action='removeMuliSchool']").on("click", function (e) {
+                muliSchoolForm = $(e.target).parents("[action='muliSchool']");
+                $('#confirm').modal("show");
+            });
+            //点击删除后，弹出层删除按钮事件
+            $("#yesCheck").unbind("click").bind("click", function (e) {
+                Pace.restart();
+                //判断，如果该校区已经入库，则删除校区数据，未入库直接删除页面即可
+                var muliSchoolID = $(muliSchoolForm).find(".portlet-title [muliSchoolID]").attr("muliSchoolID");
+                if (muliSchoolID != "" && muliSchoolID != undefined) {
+                    require(['btcommon/ajax'], function (_ajax) {
+                        _ajax.ajaxFunc(SchoolUTIL.CONFIG.deleteMuliSchoolInfo, "ID=" + muliSchoolID, function (_d) {
+                            $(muliSchoolForm).remove();
+                            SchoolUTIL.toastrAlert('success', '提示', '删除成功！');
+                        })
+                    });
+                } else {
+                    $(muliSchoolForm).remove();
+                    SchoolUTIL.toastrAlert('success', '提示', '删除成功！');
+                }
+            });
+            //点击删除后，弹出层取消按钮事件
+            $("#noCheck").unbind("click").bind("click", function () {
+//                        SchoolUTIL.toastrAlert('success', '提示', '您点击了“否”！');
+            });
+        }
+
+    });
+});

@@ -1,0 +1,24 @@
+// ================================================================
+//  author:文霞
+//  createDate: 2016/09/05
+//  description: 基础组件——输入框
+//  ===============================================================
+define(function (require) {
+    "use strict";
+    var tpl = require('text!tpl/baseInput.html'),
+        template = _.template(tpl), _this;
+    return Backbone.View.extend({
+      	className:"page-content",//如果不添加会document中多一级div
+        initialize: function () {
+            _this = this;
+            this.render();
+        },
+        render: function () {
+            this.$el.html(template(this.model));
+            return this;
+        },
+        events: {
+            
+        }
+    });
+});

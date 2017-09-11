@@ -1,0 +1,221 @@
+<style>
+    .sidebar-tags li a {
+        cursor: default;
+    }
+    .sidebar-tags li a>i {
+        cursor: pointer;
+    }
+    .nav.nav-pills>li>a{
+        cursor: default;
+        background: #f7f7f7;
+        margin: 0 2px 5px 0;
+    }
+    .nav.nav-pills>li>a>i{
+        cursor: pointer;
+    }
+
+    /*阿里云文件上传样式*/
+    .data-titleFile .dataDocBox .dataDocTitle .data-removeDoc-icon1 {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-image: url(../img/removeDoc.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        position: relative;
+        top: 3px;
+    }
+    .data-titleFile .dataDocBox .dataDocTitle .data-downloadDoc-icon {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-image: url(../img/downloadDoc.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        margin-left: 6px;
+        position: relative;
+        top: 3px;
+    }
+    .data-titleFile .dataDocBox .dataDocTitle .dataFileState0 {
+        display: inline-block;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background-color: #cccccc;
+        margin-right: 5px;
+    }
+    .data-titleFile .layui-progress {
+        height: 8px;
+        background-color: #fff;
+        border: 1px solid #d3d9e5;
+        margin-left: 10px;
+    }
+    .layui-progress {
+        position: relative;
+        border-radius: 20px !important;
+        top: 50%;
+        z-index: 100;
+    }
+    .layui-progress-bar{
+        position: absolute;
+        max-width: 100%;
+        border-radius: 20px !important;
+        text-align: right;
+        -webkit-transition: all .3s;
+    }
+    .data-titleFile .layui-progress .layui-progress-bar {
+        margin-top: 3px;
+        background-color: #26b546;
+        height: 2px;
+    }
+    .data-titleFile .layui-progress-text {
+        position: relative;
+        top: -10px;
+        left: 35px;
+        line-height: 18px;
+        font-size: 12px;
+        color: #26b546;
+    }
+    .datavalue.dataDocBox>div {
+        margin-bottom: 20px;
+    }
+    .file_img {
+        max-width: 350px;
+        max-height: 350px;
+    }
+</style>
+<div class="portlet light  ">
+    <div class="portlet-title">
+        <div class="caption">
+            <span class="caption-subject bold font-grey-gallery uppercase"> 文件上传--阿里云 </span>
+        </div>
+        <div class="tools">
+            <span class="caption-helper"><a>   </a></span>
+            <a href="" class="collapse" data-original-title=" 收起/展开" title="收起/展开"> </a>
+        </div>
+    </div>
+    <div class="portlet-body form">
+        <!-- BEGIN FORM-->
+        <form class="form-horizontal">
+            <div class="form-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label col-md-3" >多文件上传</label>
+                            <div class="col-md-9" id="container12">
+                                <button type="button" class="btn btn-info"  id="selectfiles2">选择文件</button>
+                                <button type="button" class="btn btn-info"  id="postfiles2">确认上传</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group data-titleFile">
+                            <div class="col-md-offset-3 col-md-9 datavalue dataDocBox" id="ossfile2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label col-md-3" >单文件上传</label>
+                            <div class="col-md-9" id="containerS">
+                                <button type="button" class="btn btn-info"  id="selectfilesS">选择文件</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group data-titleFile">
+                            <div class="col-md-offset-3 col-md-9 datavalue dataDocBox" id="ossfileS">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label col-md-3" >图片上传</label>
+                            <div class="col-md-9" id="containerPic">
+                                <button type="button" class="btn btn-info"  id="selectfilesPic">选择文件</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group data-titleFile">
+                            <div class="col-md-offset-3 col-md-9 datavalue dataDocBox" id="ossfilePic">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                    </div>
+                </div>
+            </div>
+        </form>
+        <!-- END FORM-->
+    </div>
+</div>
+<div class="portlet light  ">
+    <div class="portlet-title">
+        <div class="caption">
+            <span class="caption-subject bold font-grey-gallery uppercase"> 文件上传 </span>
+        </div>
+        <div class="tools">
+            <span class="caption-helper"><a>   </a></span>
+            <a href="" class="collapse" data-original-title=" 收起/展开" title="收起/展开"> </a>
+        </div>
+    </div>
+    <div class="portlet-body form">
+        <!-- BEGIN FORM-->
+        <form class="form-horizontal">
+            <div class="form-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label col-md-3">上传文件</label>
+                            <div class="col-md-9">
+                                <button type="button" class="btn btn-info"  onclick='javascript:$(this).next("input[type=file]").click();'>选择文件</button>
+                                <input type="file" style="display:none;" id="fileUpload">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                    </div>
+                </div>
+                <div class="row" id="fileListWrapper" style="display:none;">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label col-md-3">已选择</label>
+                            <div class="col-md-9">
+                                <ul class="nav nav-pills">
+                                    <!--<li >-->
+                                        <!--<a >-->
+                                            <!--当前项目删除操作的...<i class="fa fa-times"></i></a>-->
+                                    <!--</li>-->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                    </div>
+                </div>
+            </div>
+        </form>
+        <!-- END FORM-->
+    </div>
+</div>

@@ -1,0 +1,32 @@
+<div class="search-page">
+	<div class="search-bar bordered">
+	    <div class="row">
+	        <div class="col-lg-12">
+	            <div class="input-group">
+	                <input type="text" class="form-control" placeholder="搜索...">
+                    <span class="input-group-btn btn-search">
+                        <button class="btn green-soft uppercase bold" type="button">搜索</button>
+                    </span>
+                    <span class="input-group-btn btn-search">
+                        <button class="btn blue-soft uppercase bold" type="button" onclick="javascript:none;">添加</button>
+                    </span>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+</div>
+<div id="dataTableWrapper">
+	
+</div>
+
+<div id="confirm" class="modal fade" tabindex="-1" data-backdrop="static" data-keyboard="false">
+    <div class="modal-body">
+        <p>
+            确认删除这条数据?
+        </p>
+    </div>
+    <div class="modal-footer">
+        <button type="button" data-dismiss="modal" class="btn btn-default" id="noCheck">再想想</button>
+        <button type="button" data-dismiss="modal" class="btn blue" id="yesCheck">是的</button>
+    </div>
+</div>

@@ -1,0 +1,66 @@
+<!--author:w王燕欣-->
+<!--createDate: 2017/07/14-->
+<!--description: 基础组件——增加模块-->
+
+<!-- BEGIN ROW -->
+<div class="row">
+    <div class="col-md-12">
+        <div class="portlet light  ">
+            <div class="portlet-title">
+                <div class="caption">
+                    <!--<i class="icon-puzzle font-grey-gallery"></i>-->
+                    <span class="caption-subject bold font-grey-gallery uppercase"> 添加数据模块 </span>
+                </div>
+                <div class="tools">
+                    <span class="caption-helper"><a> </a></span>
+                    <a href="" class="collapse" data-original-title=" 收起/展开" title="收起/展开"> </a>
+                </div>
+            </div>
+
+            <div class="portlet-body form">
+
+                <!-- BEGIN FORM-->
+                <form action="#" class="form-horizontal">
+                    <div class="form-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="portlet-body">
+                                    <div class="row">
+                                        <div class="col-md-12 text-center">
+                                            <form class="form-inline">
+                                                <a class="btn btn-outline green-haze" id="addMuliSchool">添加</a>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- END FORM-->
+                <div id="muliSchools">
+
+                </div>
+            </div>
+        </div>
+
+ 	</div>
+ </div>
+<!-- END ROW -->
+
+<div id="confirm" class="modal fade" tabindex="-1" data-backdrop="static" data-keyboard="false">
+    <div class="modal-body">
+        <div class="portlet light  ">
+            <div class="portlet-body">
+                <p>
+                    确认删除此校区?
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" data-dismiss="modal" class="btn btn-default" id="noCheck">再想想</button>
+        <button type="button" data-dismiss="modal" class="btn blue" id="yesCheck">是的</button>
+    </div>
+</div>

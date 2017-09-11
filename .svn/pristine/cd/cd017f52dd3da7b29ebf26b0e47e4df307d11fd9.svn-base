@@ -1,0 +1,247 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="portlet light  ">
+            <div class="portlet-title">
+                <div class="caption">
+                    <span class="caption-subject bold font-grey-gallery uppercase"> 一般select</span>
+                </div>
+                <div class="tools">
+                    <span class="caption-helper"><a>   </a></span>
+                    <a href="" class="collapse" data-original-title=" 收起/展开" title="收起/展开"> </a>
+                </div>
+            </div>
+            <div class="portlet-body form">
+                <!-- BEGIN FORM-->
+                <form class="form-horizontal" id="form1">
+                    <div class="form-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">select控件</label>
+                                    <div class="col-md-9">
+                                        <select class="bs-select form-control">
+                                            <option>直属（校办）</option>
+                                            <option>中外合作办 </option>
+                                            <option>校企合办 </option>
+                                            <option>民办 </option>
+                                            <option>其他 </option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">不可用的select</label>
+                                    <div class="col-md-9">
+                                        <select class="bs-select form-control" disabled>
+                                            <option>直属（校办）</option>
+                                            <option>中外合作办 </option>
+                                            <option>校企合办 </option>
+                                            <option>民办 </option>
+                                            <option>其他 </option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">Extra Large Select</label>
+		                            <div class="col-md-9">
+		                            	<select class="bs-select form-control input-xlarge">
+			                                <option>Option 1</option>
+			                                <option>Option 2</option>
+			                                <option>Option 3</option>
+			                                <option>Option 4</option>
+			                                <option>Option 5</option>
+			                            </select>
+		                            </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">Large Select</label>
+		                            <div class="col-md-9">
+		                            	<select class="bs-select form-control input-large">
+			                                <option>Option 1</option>
+			                                <option>Option 2</option>
+			                                <option>Option 3</option>
+			                                <option>Option 4</option>
+			                                <option>Option 5</option>
+			                            </select>
+		                            </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">Medium Select</label>
+		                            <div class="col-md-9">
+		                            	<select class="bs-select form-control input-medium">
+			                                <option>Option 1</option>
+			                                <option>Option 2</option>
+			                                <option>Option 3</option>
+			                                <option>Option 4</option>
+			                                <option>Option 5</option>
+			                            </select>
+		                            </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">Small Select</label>
+		                            <div class="col-md-9">
+		                            	<select class="bs-select form-control input-small">
+			                                <option>Option 1</option>
+			                                <option>Option 2</option>
+			                                <option>Option 3</option>
+			                                <option>Option 4</option>
+			                                <option>Option 5</option>
+			                            </select>
+		                            </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">Extra Small Select</label>
+		                            <div class="col-md-9">
+		                            	<select class="bs-select form-control input-xsmall">
+			                                <option>Option 1</option>
+			                                <option>Option 2</option>
+			                                <option>Option 3</option>
+			                                <option>Option 4</option>
+			                                <option>Option 5</option>
+			                            </select>
+		                            </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <!-- END FORM-->
+            </div>
+		</div>
+        <div class="portlet light  " >
+            <div class="portlet-title">
+                <div class="caption">
+                    <span class="caption-subject bold font-grey-gallery uppercase"> select使用 </span>
+                </div>
+                <div class="tools">
+                    <span class="caption-helper"><a>   </a></span>
+                    <a href="" class="collapse" data-original-title=" 收起/展开" title="收起/展开"> </a>
+                </div>
+            </div>
+            <div class="portlet-body form">
+                <!-- BEGIN FORM-->
+                <form class="form-horizontal" id="form2">
+                    <div class="form-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="col-md-5 control-label">绑定事件的select</label>
+                                    <div class="col-md-7">
+                                        <select class="bs-select form-control" id="mySelect1">
+			                                <option>Option 1</option>
+			                                <option>Option 2</option>
+			                                <option>Option 3</option>
+			                                <option>Option 4</option>
+			                                <option>Option 5</option>
+			                            </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="col-md-5 control-label">页面渲染后添加select选项</label>
+                                    <div class="col-md-7">
+                                        <select class="bs-select form-control" id="mySelect2">
+			                            </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                            </div>
+                        </div>
+                        <div class="row">
+                        	<div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="col-md-5 control-label">select不可用+修改选中项</label>
+                                    <div class="col-md-7">
+                                        <button type="button" class="btn btn-circle blue btn-block btn-sm" style="border-radius:5px !important;" id="changeSelect">选中“Option 3”</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                            </div>
+                       	</div>
+                       	<div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="col-md-5 control-label"></label>
+                                    <div class="col-md-7">
+                                        <select class="bs-select form-control" id="mySelect3" disabled>
+			                                <option value="Option 1">Option 1</option>
+			                                <option value="Option 2">Option 2</option>
+			                                <option value="Option 3">Option 3</option>
+			                                <option value="Option 4">Option 4</option>
+			                                <option value="Option 5">Option 5</option>
+			                            </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="col-md-5 control-label">自定义select的className</label>
+                                    <div class="col-md-7">
+                                        <select class="mySelect form-control" id="mySelect4">
+			                                <option value="Option 1">Option 1</option>
+			                                <option value="Option 2">Option 2</option>
+			                                <option value="Option 3">Option 3</option>
+			                                <option value="Option 4">Option 4</option>
+			                                <option value="Option 5">Option 5</option>
+			                            </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <!-- END FORM-->
+            </div>
+		</div>
+    </div>
+</div>

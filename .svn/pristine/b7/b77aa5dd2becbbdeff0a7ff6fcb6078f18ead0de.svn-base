@@ -1,0 +1,207 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="portlet light  ">
+            <div class="portlet-title">
+                <div class="caption">
+                    <span class="caption-subject bold font-grey-gallery uppercase"> 一般复选按钮 </span>
+                </div>
+                <div class="tools">
+                    <span class="caption-helper"><a>   </a></span>
+                    <a href="" class="collapse" data-original-title=" 收起/展开" title="收起/展开"> </a>
+                </div>
+            </div>
+            <div class="portlet-body form">
+                <!-- BEGIN FORM-->
+                <form class="form-horizontal" id="form1">
+                    <div class="form-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">复选按钮 </label>
+                                    <div class="col-md-9">
+                                        <div class="input-group">
+                                            <div class="icheck-list">
+                                                <label>
+                                                    <input type="checkbox" class="icheck" data-checkbox="icheckbox_flat-green"> 学前教育 </label>
+                                                <label>
+                                                    <input type="checkbox" checked class="icheck" data-checkbox="icheckbox_flat-green"> 初等教育 </label>
+                                                <label>
+                                                    <input type="checkbox" class="icheck" data-checkbox="icheckbox_flat-green"> 中等教育 </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">复选按钮</label>
+                                    <div class="col-md-9">
+                                        <div class="input-group">
+                                            <div class="icheck-inline">
+                                                <label>
+                                                    <input type="checkbox" class="icheck" data-checkbox="icheckbox_flat-green">幼儿园</label>
+                                                <label>
+                                                    <input type="checkbox" checked class="icheck" data-checkbox="icheckbox_flat-green"> 附设幼儿班 </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <!-- END FORM-->
+            </div>
+		</div>
+        <div class="portlet light  " >
+            <div class="portlet-title">
+                <div class="caption">
+                    <span class="caption-subject bold font-grey-gallery uppercase"> 绑定事件的复选按钮 </span>
+                </div>
+                <div class="tools">
+                    <span class="caption-helper"><a>   </a></span>
+                    <a href="" class="collapse" data-original-title=" 收起/展开" title="收起/展开"> </a>
+                </div>
+            </div>
+            <div class="portlet-body form">
+                <!-- BEGIN FORM-->
+                <form class="form-horizontal" id="form2">
+                    <div class="form-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">复选按钮 </label>
+                                    <div class="col-md-9">
+                                        <div class="input-group">
+                                            <div class="icheck-list">
+                                                <label>
+                                                    <input type="checkbox" class="icheck" data-checkbox="icheckbox_flat-green" value="学前教育"> 学前教育 </label>
+                                                <label>
+                                                    <input type="checkbox" checked class="icheck" data-checkbox="icheckbox_flat-green" value="初等教育"> 初等教育 </label>
+                                                <label>
+                                                    <input type="checkbox" class="icheck" data-checkbox="icheckbox_flat-green" value="中等教育"> 中等教育 </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">复选按钮</label>
+                                    <div class="col-md-9">
+                                        <div class="input-group">
+                                            <div class="icheck-inline">
+                                                <label>
+                                                    <input type="checkbox" class="icheck" data-checkbox="icheckbox_flat-green" value="幼儿园">幼儿园</label>
+                                                <label>
+                                                    <input type="checkbox" checked class="icheck" data-checkbox="icheckbox_flat-green" value="附设幼儿班"> 附设幼儿班 </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <!-- END FORM-->
+            </div>
+		</div>
+        <div class="portlet light  " >
+            <div class="portlet-title">
+                <div class="caption">
+                    <span class="caption-subject bold font-grey-gallery"> 修改按钮组的选中状态+disabled </span>
+                </div>
+                <div class="tools">
+                    <span class="caption-helper"><a>   </a></span>
+                    <a href="" class="collapse" data-original-title=" 收起/展开" title="收起/展开"> </a>
+                </div>
+            </div>
+            <div class="portlet-body form">
+                <!-- BEGIN FORM-->
+                <form class="form-horizontal" id="form3">
+                    <div class="form-body">
+                    	<div class="row">
+                            <div class="col-md-offset-3 col-md-2">
+                            	<button type="button" class="btn btn-circle blue btn-block btn-sm" style="border-radius:5px !important;" id="changeChecked">选中“学前教育”</button>
+                            </div>
+                       	</div>  
+                    	<div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">复选按钮</label>
+                                    <div class="col-md-9">
+                                        <div class="input-group">
+                                            <div class="icheck-list" id="haveEventGroup3">
+                                                <label>
+                                                    <input type="checkbox" class="icheck" data-checkbox="icheckbox_flat-green" value="学前教育"> 学前教育 </label>
+                                                <label>
+                                                    <input type="checkbox" checked class="icheck" data-checkbox="icheckbox_flat-green" value="初等教育"> 初等教育 </label>
+                                                <label>
+                                                    <input type="checkbox" class="icheck" data-checkbox="icheckbox_flat-green" value="中等教育"> 中等教育 </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <!-- END FORM-->
+            </div>
+		</div>
+		<div class="portlet light  " >
+            <div class="portlet-title">
+                <div class="caption">
+                    <span class="caption-subject bold font-grey-gallery"> 自定义icheck的className </span>
+                </div>
+                <div class="tools">
+                    <span class="caption-helper"><a>   </a></span>
+                    <a href="" class="collapse" data-original-title=" 收起/展开" title="收起/展开"> </a>
+                </div>
+            </div>
+            <div class="portlet-body form">
+                <!-- BEGIN FORM-->
+                <form class="form-horizontal" id="form4">
+                    <div class="form-body"> 
+                    	<div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">复选按钮</label>
+                                    <div class="col-md-9">
+                                        <div class="input-group">
+                                            <div class="icheck-list">
+                                                <label>
+                                                    <input type="checkbox" class="myIcheck" data-checkbox="icheckbox_flat-green" value="学前教育"> 学前教育 </label>
+                                                <label>
+                                                    <input type="checkbox" checked class="myIcheck" data-checkbox="icheckbox_flat-green" value="初等教育"> 初等教育 </label>
+                                                <label>
+                                                    <input type="checkbox" class="myIcheck" data-checkbox="icheckbox_flat-green" value="中等教育"> 中等教育 </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <!-- END FORM-->
+            </div>
+		</div>
+    </div>
+</div>

@@ -1,0 +1,126 @@
+// ================================================================
+//  author:wyx
+//  createDate: 2017/08/12
+//  description: 基础组件——时间
+//  ===============================================================
+define(function (require) {
+    "use strict";
+    var tpl = require('text!tpl/baseTabSwitching.html'),
+        template = _.template(tpl), _this;
+    var MyValidate = require('validate');
+
+    var DataTable = require('plugins/DataTableView/DataTable');
+    return Backbone.View.extend({
+        className: "page-content",//如果不添加会document中多一级div
+        initialize: function () {
+            _this = this;
+            this.render();
+        },
+        render: function () {
+            this.$el.html(template(this.model));
+            return this;
+        },
+        afterRender: function () {
+            //如果要初始化某个范围内的select
+            BasePluginsUTIL.initSelect(_this.$("#form_top"));
+            //初始化查询会议嘉宾列表的状态条件
+            this.initSelectEventMeetUserState();
+            //初始化查询会议专家列表的状态条件
+            this.initSelectEventMeetUserState_zj();
+            //初始化查询会议媒体列表的状态条件
+            this.initSelectEventMeetUserState_mt();
+
+        },
+        events: {
+            "click #btnBasisSaveData": "basisSaveFormData",
+            "click #btnSponsorSaveData": "sponsorSaveData",
+            "click #btnExpertForm": "expertSaveDateForm",
+
+            //tab切换事件
+            "click #c_tab_jb": "initDataTableData",
+            "click #c_tab_zj": "initDataTableData_zj",
+            "click #c_tab_mt": "initDataTableData_mt",
+
+
+        },
+        basisSaveFormData: function () {
+            var me = this;
+            //执行验证
+            if (!$("#form1").valid()) {
+                me.validator.focusInvalid();
+                return;
+            }
+            BasePluginsUTIL.toastrAlert('success', '提示', "验证成功，可以提交表单了");
+        },
+        sponsorSaveData: function () {
+            var me = this;
+            //执行验证
+            if (!$("#form2").valid()) {
+                me.validator.focusInvalid();
+                return;
+            }
+            BasePluginsUTIL.toastrAlert('success', '提示', "验证成功，可以提交表单了");
+        },
+
+        initSelectEvent: function () {
+            var me = this;
+            //控件初始化
+            BasePluginsUTIL.initSelect(me.$("#form1"));
+            //事件绑定    与上面的控件初始化没有先后关系
+
+
+            //页面渲染，初始化插件之后为select重新填充数据
+            var optionArr = [
+                '<option value="Option 1">Option 1 </option>',
+                '<option value="Option 2">Option 2 </option>',
+                '<option value="Option 3">Option 3 </option>',
+                '<option value="Option 4">Option 4 </option>',
+                '<option value="Option 5">Option 5 </option>'];
+
+            $("#mySelect2").empty();
+            $("#mySelect2").append(optionArr.join());
+            //更新内容刷新到相应的位置
+            $('#mySelect2').selectpicker('render');
+            $('#mySelect2').selectpicker('refresh');
+            $('#mySelect2').selectpicker('val', 'Option 1');
+
+
+        },
+        //初始化查询会议嘉宾列表的状态条件
+        initSelectEventMeetUserState: function () {
+            var me = this;
+            me.selectedUserState = "-1";
+            //控件初始化
+            BasePluginsUTIL.initSelect(me.$("#form_top"));
+            //事件绑定    与上面的控件初始化没有先后关系
+            $('#mySelectUserState').on('change', function () {
+                me.selectedUserState = $('#mySelectUserState option:selected').val();
+                me.dataTable.render();
+            });
+        },
+        //初始化查询会议专家列表的状态条件
+        initSelectEventMeetUserState_zj: function () {
+            var me = this;
+            me.selectedUserState = "-1";
+            //控件初始化
+            BasePluginsUTIL.initSelect(me.$("#form_top_zj"));
+            //事件绑定    与上面的控件初始化没有先后关系
+            $('#mySelectUserState_zj').on('change', function () {
+                me.selectedUserState = $('#mySelectUserState_zj option:selected').val();
+                me.dataTable_zj.render();
+            });
+        },
+        //初始化查询会议媒体列表的状态条件
+        initSelectEventMeetUserState_mt: function () {
+            var me = this;
+            me.selectedUserState = "-1";
+            //控件初始化
+            BasePluginsUTIL.initSelect(me.$("#form_top_mt"));
+            //事件绑定    与上面的控件初始化没有先后关系
+            $('#mySelectUserState_mt').on('change', function () {
+                me.selectedUserState = $('#mySelectUserState_mt option:selected').val();
+                me.dataTable_mt.render();
+            });
+        },
+    });
+});

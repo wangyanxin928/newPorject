@@ -1,0 +1,49 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="portlet light  ">
+            <div class="portlet-title">
+                <div class="caption">
+                    <span class="caption-subject bold font-grey-gallery uppercase"> 小列表</span>
+                </div>
+                <div class="tools">
+                    <span class="caption-helper"><a>   </a></span>
+                    <a href="" class="collapse" data-original-title=" 收起/展开" title="收起/展开"> </a>
+                </div>
+            </div>
+            <div class="portlet-body">
+            	<div class="row">
+					<div class="col-md-8 col-lg-8"></div>
+					<div class="col-md-4 col-lg-4">
+                        <div class="row">
+                            <div class="col-md-8 col-lg-8">
+                                <input datakey="KCH" type="text" class="form-control  input-circle" placeholder="输入教师姓名..." id="KCH" name="KCH">
+                            </div>
+                            <div class="col-md-4 col-lg-4 text-right">
+                                <a class="btn btn-outline green-haze">检索</a>
+                            </div>
+                        </div>
+					</div>
+
+                </div>
+				<div class="row">
+					<div class="col-md-12 ">
+						<div id="dataTableWrapper" style="margin-top: 16px;"></div>
+					</div>
+				</div>
+            </div>
+		</div>
+	</div>
+</div>	
+
+
+<div id="confirm" class="modal fade" tabindex="-1" data-backdrop="static" data-keyboard="false">
+    <div class="modal-body">
+        <p>
+            确认删除这条数据?
+        </p>
+    </div>
+    <div class="modal-footer">
+        <button type="button" data-dismiss="modal" class="btn btn-default" id="noCheck">再想想</button>
+        <button type="button" data-dismiss="modal" class="btn blue" id="yesCheck">是的</button>
+    </div>
+</div>

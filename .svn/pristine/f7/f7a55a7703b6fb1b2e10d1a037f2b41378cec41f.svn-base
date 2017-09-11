@@ -1,0 +1,43 @@
+// ================================================================
+//  author:文霞
+//  createDate: 2016/09/06
+//  description: 基础组件——时间
+//  ===============================================================
+define(function (require) {
+    "use strict";
+    var tpl = require('text!tpl/baseDatepicker.html'),
+        template = _.template(tpl), _this;
+    return Backbone.View.extend({
+      	className:"page-content",//如果不添加会document中多一级div
+        initialize: function () {
+            _this = this;
+            this.render();   
+        },
+        render: function () {
+            this.$el.html(template(this.model));
+            return this;
+        },
+        afterRender:function(){
+        	var me=this;
+        	//如要初始化当前View中的全部DatePicker，使用下面的代码
+//          BasePluginsUTIL.initDatePicker();
+
+            //如果要初始化某个范围内的单选按钮
+            BasePluginsUTIL.initDatePicker(me.$("#form1"));
+            
+            //绑定事件
+            $('#myDatepicker1').datepicker().on('changeDate',function(dateText,ev){
+				BasePluginsUTIL.toastrAlert('success', '提示', 
+				$("#myDatepicker1").datepicker("getDate").toLocaleString());//"聂士奇是傻子");
+			});
+			
+			//绑定事件
+			$("#myDatepicker2").datepicker("setDate", new Date());//设置
+
+        },
+        events: {
+            
+        }
+    });
+});
+//http://bootstrap-datepicker.readthedocs.io/en/latest/methods.html

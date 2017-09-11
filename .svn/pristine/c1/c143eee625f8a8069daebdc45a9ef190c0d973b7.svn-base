@@ -1,0 +1,553 @@
+
+<!-- BEGIN ROW -->
+<div class="row">
+    <div class="col-md-12">
+        <!--文本框+lable  start-->
+        <div class="portlet light  " id="htmlTextLable">
+            <div class="portlet-title">
+                <div class="caption">
+                    <!--<i class="icon-puzzle font-grey-gallery"></i>-->
+                    <span class="caption-subject bold font-grey-gallery uppercase"> 文本框+lable </span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <span><i class="icon-question font-grey-gallery"></i></span>
+                    <span class="caption-helper" data-target="#text_lable" data-toggle="modal"><a > 关于文本框+lable的组件样式</a></span>
+                </div>
+                <div class="tools">
+                    <span class="caption-helper"><a>   </a></span>
+                    <a href="" class="collapse" data-original-title=" 收起/展开" title="收起/展开"> </a>
+                </div>
+            </div>
+
+            <div class="portlet-body form">
+
+                <!-- BEGIN FORM-->
+                <form action="#" class="form-horizontal" id="schoolBaseForm">
+                    <div class="form-body">
+                        <!--<h3 class="form-section">基础信息</h3>-->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label col-md-3">学校名称</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control  input-circle" placeholder="如:绵阳外国语学校" id="schoolName" name="schoolName">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                            </div>
+                            <!--/span-->
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-offset-3 col-md-9">
+                                            <button type="button" class="btn btn-circle blue btn-block btn-sm" style="border-radius:5px !important;">更新</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-1">
+                            </div>
+                            <!--/span-->
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label col-md-3">学校英文名称</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control  input-circle" placeholder="如:MIANYANG MIDDLE SCHOOL" id="schoolEnName">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                            </div>
+                            <!--/span-->
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-offset-3 col-md-9">
+                                            <button type="BUTTON" class="btn btn-circle default  btn-block btn-sm" style="border-radius:5px !important;"
+                                                    data-target="#confirm" data-toggle="modal">取消</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-1">
+                            </div>
+                            <!--/span-->
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label col-md-3">学校地址</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control  input-circle" readonly placeholder="如:绵阳市酒仙桥路20号" id="schoolAddress" value="绵阳市酒仙桥路20号">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                            </div>
+                            <!--/span-->
+                            <div class="col-md-2">
+                            </div>
+                            <div class="col-md-1">
+                            </div>
+                            <!--/span-->
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label col-md-3">学校代码</label>
+                                    <div class="col-md-9">
+                                        <p class="form-control-static">
+                                            1000258
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                            </div>
+                            <!--/span-->
+                            <div class="col-md-2">
+                            </div>
+                            <div class="col-md-1">
+                            </div>
+                            <!--/span-->
+                        </div>
+                        <!--/row-->
+                    </div>
+                </form>
+                <!-- END FORM-->
+            </div>
+        </div>
+        <!--文本框+lable end-->
+
+        <!--单选+复选  start-->
+        <div class="portlet light  " id="htmlCheckRadio">
+            <div class="portlet-title">
+                <div class="caption">
+                    <!--<i class="icon-puzzle font-grey-gallery"></i>-->
+                    <span class="caption-subject bold font-grey-gallery uppercase"> 单选+复选 </span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <span><i class="icon-question font-grey-gallery"></i></span>
+                    <span class="caption-helper"><a> 关于单选+复选的组件样式</a></span>
+                </div>
+                <div class="tools">
+                    <span class="caption-helper"><a>  </a></span>
+                    <a href="" class="collapse" data-original-title=" " title="收起/展开"> </a>
+                </div>
+            </div>
+
+            <div class="portlet-body form">
+
+                <!-- BEGIN FORM-->
+                <form action="#" class="form-horizontal" id="radioSelectFrom">
+                    <div class="form-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">
+                                        办学类型 </label>
+                                    <div class="col-md-9">
+                                        <div class="input-group">
+                                            <div class="icheck-list">
+                                                <label>
+                                                    <input type="checkbox" class="icheck" data-checkbox="icheckbox_flat-blue"> 学前教育 </label>
+                                                <label>
+                                                    <input type="checkbox" checked class="icheck" data-checkbox="icheckbox_flat-blue"> 初等教育 </label>
+                                                <label>
+                                                    <input type="checkbox" class="icheck" data-checkbox="icheckbox_flat-blue"> 中等教育 </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                            </div>
+                            <!--/span-->
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-offset-3 col-md-9">
+                                            <button type="button" class="btn btn-circle blue btn-block btn-sm" style="border-radius:5px !important;">更新</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-1">
+                            </div>
+                            <!--/span-->
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">学前教育</label>
+                                    <div class="col-md-9">
+                                        <div class="input-group">
+                                            <div class="icheck-inline">
+                                                <label>
+                                                    <input type="checkbox" class="icheck" data-checkbox="icheckbox_flat-blue">幼儿园</label>
+                                                <label>
+                                                    <input type="checkbox" checked class="icheck" data-checkbox="icheckbox_flat-blue"> 附设幼儿班 </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                            </div>
+                            <!--/span-->
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-offset-3 col-md-9">
+                                            <button type="BUTTON" class="btn btn-circle default  btn-block btn-sm" style="border-radius:5px !important;"
+                                                    data-target="#confirm" data-toggle="modal">取消</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-1">
+                            </div>
+                            <!--/span-->
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">初等教育</label>
+                                    <div class="col-md-9">
+                                        <div class="input-group">
+                                            <div class="icheck-list">
+                                                <label>
+                                                    <input type="radio" name="radio1" class="icheck" data-radio="iradio_flat-blue"> 小学</label>
+                                                <label>
+                                                    <input type="radio" name="radio1" checked class="icheck" data-radio="iradio_flat-blue">小学教学点 </label>
+                                                <label>
+                                                    <input type="radio" name="radio1" class="icheck" data-radio="iradio_flat-blue">附设教学班 </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                            </div>
+                            <!--/span-->
+                            <div class="col-md-2">
+                            </div>
+                            <div class="col-md-1">
+                            </div>
+                            <!--/span-->
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">中等教育</label>
+                                    <div class="col-md-9">
+                                        <div class="input-group">
+                                            <div class="icheck-inline">
+                                                <label>
+                                                    <input type="radio" name="radio2" class="icheck" data-radio="iradio_flat-blue"> 普通初中</label>
+                                                <label>
+                                                    <input type="radio" name="radio2" checked class="icheck" data-radio="iradio_flat-blue">普通高中</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                            </div>
+                            <!--/span-->
+                            <div class="col-md-2">
+                            </div>
+                            <div class="col-md-1">
+                            </div>
+                            <!--/span-->
+                        </div>
+                    </div>
+                </form>
+                <!-- END FORM-->
+            </div>
+        </div>
+        <!--单选+复选 end-->
+
+        <!--时间+下拉  start-->
+        <div class="portlet light  " id="htmlDateSelect">
+            <div class="portlet-title">
+                <div class="caption">
+                    <!--<i class="icon-puzzle font-grey-gallery"></i>-->
+                    <span class="caption-subject bold font-grey-gallery uppercase"> 时间+下拉 </span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <span><i class="icon-question font-grey-gallery"></i></span>
+                    <span class="caption-helper"><a> 关于时间+下拉的组件样式</a></span>
+                </div>
+                <div class="tools">
+                    <span class="caption-helper"><a>  </a></span>
+                    <a href="" class="collapse" data-original-title=" " title="收起/展开"> </a>
+                </div>
+            </div>
+
+            <div class="portlet-body form">
+
+                <!-- BEGIN FORM-->
+                <form action="#" class="form-horizontal">
+                    <div class="form-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">单位办别</label>
+                                    <div class="col-md-9">
+                                        <select class="bs-select form-control">
+                                            <option>直属（校办）</option>
+                                            <option>中外合作办 </option>
+                                            <option>校企合办 </option>
+                                            <option>民办 </option>
+                                            <option>其他 </option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                            </div>
+                            <!--/span-->
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-offset-3 col-md-9">
+                                            <button type="BUTTON" class="btn btn-circle blue btn-block btn-sm" style="border-radius:5px !important;">更新</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-1">
+                            </div>
+                            <!--/span-->
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">单位办别</label>
+                                    <div class="col-md-9">
+                                        <select class="bs-select form-control" disabled>
+                                            <option>直属（校办）</option>
+                                            <option>中外合作办 </option>
+                                            <option>校企合办 </option>
+                                            <option>民办 </option>
+                                            <option>其他 </option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                            </div>
+                            <!--/span-->
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-offset-3 col-md-9">
+                                            <button type="BUTTON" class="btn btn-circle default  btn-block btn-sm" style="border-radius:5px !important;"
+                                                    data-target="#confirm" data-toggle="modal">取消</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-1">
+                            </div>
+                            <!--/span-->
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">
+                                        只读日期 </label>
+                                    <div class="col-md-9">
+                                        <div class="input-group date date-picker ">
+                                            <input type="text" size="16" readonly class="form-control">
+                                                        <span class="input-group-btn">
+                                                            <button class="btn default date-set" type="button">
+                                                                <i class="fa fa-calendar"></i>
+                                                            </button>
+                                                        </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                            </div>
+                            <!--/span-->
+                            <div class="col-md-2">
+                            </div>
+                            <div class="col-md-1">
+                            </div>
+                            <!--/span-->
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">
+                                        建校年月 </label>
+                                    <div class="col-md-9">
+                                        <input class="form-control form-control-inline input-medium date-picker" data-date-format="yyyy-mm" size="16" type="text" value=""/>
+											<span class="help-block">
+											选择到月 </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                            </div>
+                            <!--/span-->
+                            <div class="col-md-2">
+                            </div>
+                            <div class="col-md-1">
+                            </div>
+                            <!--/span-->
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">从今天开始</label>
+                                    <div class="col-md-9">
+                                        <div class="input-group input-medium date date-picker" data-date-format="yyyy-mm-dd" data-date-start-date="+0d">
+                                            <input type="text" class="form-control" readonly="true">
+												<span class="input-group-btn">
+												<button class="btn default" type="button"><i class="fa fa-calendar"></i></button>
+												</span>
+                                        </div>
+                                        <!-- /input-group -->
+											<span class="help-block">
+											选择今天及今天之后的日期 </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                            </div>
+                            <!--/span-->
+                            <div class="col-md-2">
+                            </div>
+                            <div class="col-md-1">
+                            </div>
+                            <!--/span-->
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">学年起止</label>
+                                    <div class="col-md-9">
+                                        <div class="input-group input-large date-picker input-daterange" data-date="2015-7-5" data-date-format="yyyy-mm-dd">
+                                            <input type="text" class="form-control" name="from">
+												<span class="input-group-addon">
+												to </span>
+                                            <input type="text" class="form-control" name="to">
+                                        </div>
+                                        <!-- /input-group -->
+											<span class="help-block">
+											从某一天 至 之后的某一天 </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                            </div>
+                            <!--/span-->
+                            <div class="col-md-2">
+                            </div>
+                            <div class="col-md-1">
+                            </div>
+                            <!--/span-->
+                        </div>
+                    </div>
+                </form>
+                <!-- END FORM-->
+            </div>
+        </div>
+        <!--时间+下拉 end-->
+
+        <!--tab  start-->
+        <div class="portlet light  " id="htmlTab">
+            <div class="portlet-title">
+                <div class="caption">
+                    <!--<i class="icon-puzzle font-grey-gallery"></i>-->
+                    <span class="caption-subject bold font-grey-gallery uppercase"> tab </span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <span><i class="icon-question font-grey-gallery"></i></span>
+                    <span class="caption-helper"><a> 关于tab的组件样式</a></span>
+                </div>
+                <div class="tools">
+                    <span class="caption-helper"><a>  </a></span>
+                    <a href="" class="collapse" data-original-title=" " title="收起/展开"> </a>
+                </div>
+            </div>
+
+            <div class="portlet-body form">
+                <div class="tabbable-custom ">
+                    <ul class="nav nav-tabs ">
+                        <li class="active">
+                            <a href="#tab_5_1" data-toggle="tab"> 小学部 </a>
+                        </li>
+                        <li>
+                            <a href="#tab_5_2" data-toggle="tab"> 初中部 </a>
+                        </li>
+                        <li>
+                            <a href="#tab_5_3" data-toggle="tab"> 高中部 </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="tab_5_1">
+                            <p> I'm in Section 1. </p>
+                            <p> Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                                consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat. </p>
+                        </div>
+                        <div class="tab-pane" id="tab_5_2">
+                            <p> Howdy, I'm in Section 2. </p>
+                            <p> Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+                                consequat. Ut wisi enim ad minim veniam, quis nostrud exerci tation. </p>
+                        </div>
+                        <div class="tab-pane" id="tab_5_3">
+                            <p> Howdy, I'm in Section 3. </p>
+                            <p> Duis autem vel eum iriure dolor in hendrerit in vulputate. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum
+                                iriure dolor in hendrerit in vulputate velit esse molestie consequat </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--tab end-->
+
+    </div>
+</div>
+<!-- END ROW -->
+
+<!--弹出询问层样式-->
+<!--backdrop	boolean 或 string 'static'-->
+    <!--默认值：true	data-backdrop	指定一个静态的背景，当用户点击模态框外部时不会关闭模态框。-->
+<!--keyboard	boolean-->
+    <!--默认值：true	data-keyboard	当按下 escape 键时关闭模态框，设置为 false 时则按键无效。-->
+<!--show	boolean-->
+    <!--默认值：true	data-show	当初始化时显示模态框。-->
+<!--remote	path-->
+    <!--使用 jQuery .load 方法，为模态框的主体注入内容。如果添加了一个带有有效 URL 的 href，则会加载其中的内容。如下面的实例所示：
+        <a data-toggle="modal" href="remote.html" data-target="#modal">请点击我</a>默认值：false-->
+<div id="confirm" class="modal fade" tabindex="-1" data-backdrop="static" data-keyboard="false">
+    <div class="modal-body">
+        <p>
+            是真的不提交吗?
+        </p>
+    </div>
+    <div class="modal-footer">
+        <button type="button" data-dismiss="modal" class="btn btn-default" id="noCheck">再想想</button>
+        <button type="button" data-dismiss="modal" class="btn blue" id="yesCheck">是的</button>
+    </div>
+</div>
+<div id="text_lable" class="modal container fade" tabindex="-1">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+        <h4 class="modal-title">关于文本+lable的弹出层</h4>
+    </div>
+    <div class="modal-body" id="text_lable_content">
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" data-dismiss="modal" class="btn btn-default" id="noLook1">再看看</button>
+        <button type="button" data-dismiss="modal" class="btn blue" id="yesLook1">不看了</button>
+    </div>
+</div>

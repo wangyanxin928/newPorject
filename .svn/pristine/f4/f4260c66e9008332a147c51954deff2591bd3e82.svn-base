@@ -1,0 +1,130 @@
+<style>
+    @media (min-width: 768px) {
+        .form-horizontal .control-label {
+            padding-top: 3px;
+            margin-bottom: 0;
+            text-align: right;
+        }
+    }
+</style>
+<div class="row">
+    <div class="col-md-12">
+        <div class="portlet light  ">
+            <div class="portlet-title">
+                <div class="caption">
+                    <span class="caption-subject bold font-grey-gallery uppercase">参会人员花名册</span>
+                </div>
+                <div class="tools">
+                    <span class="caption-helper"><a></a></span>
+                    <a href="" class="collapse" data-original-title=" 收起/展开" title="收起/展开"> </a>
+                </div>
+            </div>
+            <div class="portlet-body form">
+                <!-- BEGIN FORM-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- Begin: life time stats -->
+                        <div class="portlet light portlet-fit portlet-datatable bordered">
+                            <div class="portlet-body">
+                                <div class="tabbable-line">
+                                    <ul class="nav nav-tabs nav-tabs-lg">
+                                        <li class="active">
+                                            <a href="#tab_jb" data-toggle="tab" id="c_tab_jb">参会嘉宾</a>
+                                        </li>
+                                        <li>
+                                        <a href="#tab_zj" data-toggle="tab" id="c_tab_zj"> 参会专家 </a>
+                                        </li>
+                                        <li>
+                                        <a href="#tab_mt" data-toggle="tab"   id="c_tab_mt">参会媒体</a>
+                                        </li>
+
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="tab_jb">
+                                            <div class="row">
+                                                <div class="col-md-12 text-right">
+                                                    <form class="form-inline" id="form_top">
+                                                        <select class="bs-select " id="mySelectUserState">
+                                                            <option value="-1">参会嘉宾</option>
+                                                            <option value="0">未审核</option>
+                                                            <option value="1">未邀请</option>
+                                                            <option value="2">未到会</option>
+                                                            <option value="3">已到会</option>
+                                                        </select>
+                                                        <div class="form-group">
+                                                            <input datakey="KCH" type="text"
+                                                                   class="form-control  input-circle"
+                                                                   placeholder="姓名或手机号" id="seach_content" name="KCH">
+                                                        </div>
+                                                        <a class="btn btn-outline green-haze" id="btnSearch">搜索</a>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12 ">
+                                                    <div id="jb_table" style="margin-top: 16px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="tab_zj">
+                                            <div class="row">
+                                                <div class="col-md-12 text-right">
+                                                    <form class="form-inline" id="form_top_zj">
+                                                        <select class="bs-select " id="mySelectUserState_zj">
+                                                            <option value="-1">参会专家</option>
+                                                            <option value="2">未到会</option>
+                                                            <option value="3">已到会</option>
+                                                        </select>
+                                                        <div class="form-group">
+                                                            <input datakey="KCH" type="text"
+                                                                   class="form-control  input-circle"
+                                                                   placeholder="姓名或手机号" id="seach_content_zj" name="KCH">
+                                                        </div>
+                                                        <a class="btn btn-outline green-haze" id="btnSearch_zj">搜索</a>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12 ">
+                                                    <div id="jb_table_zj" style="margin-top: 16px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="tab_mt">
+                                            <div class="row">
+                                                <div class="col-md-12 text-right">
+                                                    <form class="form-inline" id="form_top_mt">
+                                                        <select class="bs-select " id="mySelectUserState_mt">
+                                                            <option value="-1">参会媒体</option>
+                                                            <option value="2">未到会</option>
+                                                            <option value="3">已到会</option>
+                                                        </select>
+                                                        <div class="form-group">
+                                                            <input datakey="KCH" type="text"
+                                                                   class="form-control  input-circle"
+                                                                   placeholder="姓名或手机号" id="seach_content_mt" name="KCH">
+                                                        </div>
+                                                        <a class="btn btn-outline green-haze" id="btnSearch_mt">搜索</a>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12 ">
+                                                    <div id="jb_table_mt" style="margin-top: 16px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End: life time stats -->
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- END FORM-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

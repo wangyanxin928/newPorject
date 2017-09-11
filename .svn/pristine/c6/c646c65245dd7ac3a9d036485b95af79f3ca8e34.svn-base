@@ -1,0 +1,241 @@
+<!--author:w王燕欣-->
+<!--createDate: 2017/07/27-->
+<!--description: 概览 -->
+
+<!--overviewOne-->
+
+<!-- BEGIN ROW -->
+<style>
+
+</style>
+<div class="row">
+    <div class="col-md-12">
+        <div class="eduAdminBox">
+            <div class="eduAdminTop">
+                <div class="topOne">
+                    <div class="itemTitle p16">
+                        <p id="project_name" name="project_name">大方县学校办学水平评估</p>
+                        <span id="project_state" name="project_state">未知</span>
+                        <div class="breakLine"></div>
+                        <div>
+                            <p class="f14 mt20">项目周期：</p>
+                            <div class="f12" id="project_time" name="project_time">2017-07-13 至 2017-08-31</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="topTwo">
+                    <div class="topThree">
+                        <div class="p16">
+                            <div>
+                                <a href="#scheduleProject" class="appInfoCode"></a>
+                                <p>评估进度</p>
+                            </div>
+                            <div class="tac" id="process_div" name="process_div">
+                                <!--<img class="mt20" src="../../images/load.gif" height="45" width="50"/>-->
+                                <!--<canvas id="process" width="100" height="100" class="mt15"></canvas>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="topThree">
+                        <div class="p16">
+                            <div>
+                                <a href="#scheduleProject" class="appInfoCode"></a>
+                                <p>已提交</p>
+                            </div>
+                            <div class="tac">
+                                <div class="fourTitle yellowTxt" id="tj" name="tj">
+                                    0<span class="f12 t999"></span>
+                                </div>
+                                <div class="shouldIcon mt10"></div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="topThree">
+                        <div class="p16">
+                            <div>
+                                <a href="#scheduleProject" class="appInfoCode"></a>
+                                <p>应提交</p>
+                            </div>
+                            <div class="tac">
+                                <div class="fourTitle blueTxt" id="ytj" name="ytj">
+                                    0<span class="f12 t999"></span>
+                                </div>
+                                <div class="abilityIcon mt10"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="eduSection">
+                <div class="sectionOne">
+                    <div class="breadBox" style="margin-top: 10px;">
+                        <ul>
+                            <li class="breadThis" data-type="1"><span></span>近7天提交量统计</li>
+                            <li data-type="2"><span></span>近30天提交量统计</li>
+                        </ul>
+                    </div>
+                    <!--<div class="sectionOne" style="width: 100%;padding-top:16px;" id="canvasDiv" name="canvasDiv"></div>-->
+                    <div style="96%;margin-top: 4%;" id="canvasDiv" name="canvasDiv">
+                    </div>
+                </div>
+                <div class="sectionTwo">
+                    <div class="sectionTwoBox">
+                        <div class="sectionTab thisTab cp" id="publicityBtn">资料公示</div>
+                        <div class="sectionTab cp" id="reportBtn">举报公示</div>
+                        <div id="publicityTab" name="publicityTab">
+                            <div class="layui-form-item pt20 pr">
+                                <div class="wTime96 fl">2017-07-04</div>
+                                <div class="pr">
+                                    <div class="verticalLine">
+                                        <div class="originGreen"><i class="originGreenMin"></i></div>
+                                    </div>
+                                </div>
+                                <div class="fl txtW2 ml20"><p class="f14 c333 txtHidden">名师奖--清华大学附属中学</p></div>
+                            </div>
+                            <div class="layui-form-item">
+                                <div class="wTime96 fl">2017-07-04</div>
+                                <div class="pr">
+                                    <div class="verticalLine">
+                                        <div class="originGreen2"><i class="originGreenMin2"></i></div>
+                                    </div>
+                                </div>
+                                <div class="fl txtW2 ml20"><p class="f14 c333 txtHidden">教研教改成果获奖情况--清华大学附属中学</p></div>
+                            </div>
+                            <div class="layui-form-item">
+                                <div class="wTime96 fl">2017-07-04</div>
+                                <div class="pr">
+                                    <div class="verticalLine">
+                                        <div class="originGreen2"><i class="originGreenMin2"></i></div>
+                                    </div>
+                                </div>
+                                <div class="fl txtW2 ml20"><p class="f14 c333 txtHidden">综合性考核评估获奖情况--清华大学附属中学</p></div>
+                            </div>
+                            <div class="layui-form-item">
+                                <div class="wTime96 fl">2017-06-28</div>
+                                <div class="pr">
+                                    <div class="verticalLine">
+                                        <div class="originGreen2"><i class="originGreenMin2"></i></div>
+                                    </div>
+                                </div>
+                                <div class="fl txtW2 ml20"><p class="f14 c333 txtHidden">综合性考核评估获奖情况--湟川中学一分校</p></div>
+                            </div>
+                            <div class="layui-form-item">
+                                <div class="wTime96 fl">2017-06-27</div>
+                                <div class="pr">
+                                    <div class="verticalLine2">
+                                        <div class="originGreen2"><i class="originGreenMin2"></i></div>
+                                    </div>
+                                </div>
+                                <div class="fl txtW2 ml20"><p class="f14 c333 txtHidden">体育健康工作--湟川中学一分校</p></div>
+                            </div>
+                            <div class="dataLinkTxt" id="publicityTab_a" name="publicityTab_a"><a
+                                    href="#attachmentList/3" class="yellowBtnTxt">查看更多
+                                <span class="moreIcon">&gt;&gt;</span></a></div>
+                        </div>
+                        <div id="sectionTab" name="sectionTab" style="display: none;">
+                            <div class="layui-form-item pt20 pr">
+                                <div class="wTime96 fl">2017-07-18</div>
+                                <div class="pr">
+                                    <div class="verticalLine3">
+                                        <div class="originGreen"><i class="originGreenMin"></i></div>
+                                    </div>
+                                </div>
+                                <div class="fl txtW ml20"><p class="f14 c333 txtHidden">大面积停课罢课--445</p>
+                                    <div class="custom"><p class="">4524524</p></div>
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <div class="wTime96 fl">2017-07-13</div>
+                                <div class="pr">
+                                    <div class="verticalLine3">
+                                        <div class="originGreen2"><i class="originGreenMin2"></i></div>
+                                    </div>
+                                </div>
+                                <div class="fl txtW ml20"><p class="f14 c333 txtHidden">大面积停课罢课--大方实验二小</p>
+                                    <div class="custom"><p class="">大方实验二小举报</p></div>
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <div class="wTime96 fl">2017-07-13</div>
+                                <div class="pr">
+                                    <div class="verticalLine2">
+                                        <div class="originGreen2"><i class="originGreenMin2"></i></div>
+                                    </div>
+                                </div>
+                                <div class="fl txtW ml20"><p class="f14 c333 txtHidden">教职工非正常上访--大方一小</p>
+                                    <div class="custom"><p class="">测试一次，教育局上线</p></div>
+                                </div>
+                            </div>
+                            <div class="dataLinkTxt" id="sectionTab_a" name="sectionTab_a"><a
+                                    href="#tipoffExamineList/1" class="yellowBtnTxt">查看更多 <span class="moreIcon">&gt;&gt;</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="eduBottom">
+                <div class="bottomOne">
+                    <div class="bottom50 mmr3">
+                        <div class="pl20 tal">
+                            <div>
+                                <a href="#tipoffExamineList/2" class="appInfoCode"></a>
+                                <p>待审批</p>
+                            </div>
+                        </div>
+                        <div class="breakLine"></div>
+
+                        <div class="fourTitle ringBox" id="daishenpi" name="daishenpi">
+                            0<span class="f12 t999"></span>
+                        </div>
+                    </div>
+                    <div class="bottom50 ">
+                        <div class="pl20 tal">
+                            <div>
+                                <a href="#achievementindex/stu" class="appInfoCode"></a>
+                                <p>成绩导入</p>
+                            </div>
+                        </div>
+                        <div class="breakLine"></div>
+                        <div class="fourTitle ringBox2"  name="chengji">
+                            9<span class="f12 t999"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottomTwo2">
+                    <div class="pl20 tal">
+                        <div>
+                            <a href="#achievementindex/stu" class="appInfoCode"></a>
+                            <p>成绩导入</p>
+                        </div>
+                    </div>
+                    <div class="breakLine"></div>
+                    <div class="fourTitle ringBox2"  name="chengji">
+                        9<span class="f12 t999"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END ROW -->
+<script>
+    $('#publicityBtn').click(function () {
+        $('#publicityTab').css("display", 'block');
+        $('#sectionTab').css("display", 'none');
+
+        $('.thisTab').removeClass('thisTab');
+        $(this).addClass('thisTab');
+
+    });
+    $('#reportBtn').click(function () {
+        $('#sectionTab').css("display", 'block');
+        $('#publicityTab').css("display", 'none');
+        $('.thisTab').removeClass('thisTab');
+        $(this).addClass('thisTab');
+    })
+</script>
